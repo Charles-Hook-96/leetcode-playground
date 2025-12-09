@@ -1,0 +1,27 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//412. FizzBuzz
+public class FizzBuzzProblem {
+
+    public static List<String> fizzBuzzSolution(int n) {
+        List<String> array = new ArrayList<>();
+
+        for (int i = 1; i <= n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                array.add("Fizzbuzz");
+            } else if (i % 3 == 0) {
+                array.add("Buzz");
+            } else if (i % 5 == 0) {
+                array.add("Fizz");
+            } else {
+                array.add(String.valueOf(i));
+            }
+        }
+
+        return array;
+
+    }
+}
