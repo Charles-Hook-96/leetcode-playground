@@ -1,4 +1,4 @@
-package org.example;
+package org.example.leetcode;
 
 //1832. Check if the Sentence Is Pangram
 public class PangramProblem {

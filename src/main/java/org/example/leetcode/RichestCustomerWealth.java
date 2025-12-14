@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Arrays;
+package org.example.leetcode;
 
 //1672. Richest Customer Wealth
 //Test data: int[][] matrix = {{1, 2, 3}, {3, 2, 1}};

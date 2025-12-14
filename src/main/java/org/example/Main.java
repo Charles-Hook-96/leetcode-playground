@@ -1,11 +1,14 @@
 package org.example;
 
 
-import static org.example.AreNumbersAscending.areNumbersAscending;
+import org.example.algorithms.sort.BubbleSort;
+import org.example.neetcode.GroupAnagrams;
+import org.example.neetcode.TwoSum;
+
 
 public class Main {
     public static void main(String[] args) {
-        areNumbersAscending("1 box has 3 blue 4 red 6 green and 12 yellow marbles");
+        BubbleSort.example();
     }
 
 }

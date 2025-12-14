@@ -1,4 +1,4 @@
-package org.example;
+package org.example.leetcode;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,7 +1,6 @@
-package org.example;
+package org.example.leetcode;
 
 import java.util.HashMap;
-import java.util.Map;
 
 //383. Ransom Note
 public class RansomNote {

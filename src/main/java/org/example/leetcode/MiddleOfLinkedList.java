@@ -1,4 +1,6 @@
-package org.example;
+package org.example.leetcode;
+
+import org.example.models.ListNode;
 
 //876. Middle of the Linked List
 /*
@@ -19,22 +21,4 @@ public class MiddleOfLinkedList {
         return node1;
 
     }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
 }

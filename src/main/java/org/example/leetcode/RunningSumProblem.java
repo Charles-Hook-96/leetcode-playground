@@ -1,4 +1,4 @@
-package org.example;
+package org.example.leetcode;
 
 //1480. Running sum of 1D Array
 public class RunningSumProblem {
