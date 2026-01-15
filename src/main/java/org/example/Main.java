@@ -1,11 +1,12 @@
 package org.example;
 
-import org.example.algorithms.sort.SelectionSort;
+import org.example.neetcode.GroupAnagram;
+import org.example.neetcode.TopKFrequent;
 
 
 public class Main {
     public static void main(String[] args) {
-        SelectionSort.example();
+        TopKFrequent.example(new int[] {1,2,2,3,3,3}, 2);
     }
 
 }
