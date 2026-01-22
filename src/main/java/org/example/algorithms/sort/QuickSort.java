@@ -4,6 +4,8 @@ public class QuickSort {
 
     public static void example() {
 
+        int[] array = new int[] {9, 8, 4,7,8,6,5,4,3,2,1,9,8,7,3,4,5,67,11};
+
         quickSort(array, 0, array.length - 1);
 
         for (int i : array) {
@@ -11,7 +13,7 @@ public class QuickSort {
         }
     }
 
-    public static void quicksort(int[] array, int lowIndex, int highIndex) {
+    public static void quickSort(int[] array, int lowIndex, int highIndex) {
 
         if (lowIndex >= highIndex) {
             return;
@@ -23,8 +25,8 @@ public class QuickSort {
 
         swap(array, leftPointer, highIndex);
 
-        quicksort(array, lowIndex, leftPointer -1);
-        quicksort(array, leftPointer + 1, highIndex);
+        quickSort(array, lowIndex, leftPointer -1);
+        quickSort(array, leftPointer + 1, highIndex);
     }
 
     private static int partition(int[] array, int lowIndex, int highIndex, int pivot) {

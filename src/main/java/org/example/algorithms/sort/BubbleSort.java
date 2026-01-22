@@ -12,7 +12,7 @@ package org.example.algorithms.sort;
 public class BubbleSort {
 
     public static void example() {
-        int[] array = new int[]{9, 1, 8, 2, 7, 3, 6, 4, 5};
+        int[] array = new int[]{9, 8, 4, 7, 8, 6, 5, 4, 3, 2, 1, 9, 8, 7, 3, 4, 5, 67, 11};
 
         bubbleSort(array);
 
@@ -28,16 +28,16 @@ public class BubbleSort {
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
-                    swap(array, i, j);
+                    swap(array, j, j + 1);
                 }
             }
         }
     }
 
-    private static void swap(int[] array, int i, int j) {
+    static void swap(int[] array, int i, int j) {
         int temp = array[i];
-        array[j] = array[j + 1];
-        array[j + 1] = temp;
+        array[i] = array[j];
+        array[j] = temp;
     }
 
 }
