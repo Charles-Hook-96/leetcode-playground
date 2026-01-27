@@ -11,15 +11,17 @@ public class BinarySearch {
             return -1;
         }
 
-        int middle = start + (end - start) / 2;
+        int mid = start + (end - start) / 2;
 
-        if (nums[middle] == target) {
-            return middle;
+        if (nums[mid] == target) {
+            return mid;
         }
 
-        return (nums[middle] < target) ?
-                binarySearch(middle + 1, end, nums, target) :
-                binarySearch(start, middle - 1, nums, target);
+        return (nums[mid] < target) ?
+                binarySearch(mid + 1, end, nums, target) :
+                binarySearch(start, mid - 1, nums, target);
+
+
     }
 
     public static int iterative(int[] nums, int target) {
